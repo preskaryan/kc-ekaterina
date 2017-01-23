@@ -10,13 +10,14 @@
 <body onload="initPage()">
     <div id="wrapper">
 		<div class="break">&nbsp;</div>
+        
         <div id="header"><?php include('include/header.php');?></div>
 
     	<div class="break">&nbsp;</div>
         
 		<div id="content">
 			<div id="menu"><?php include('menu/menu.php');?></div>
-			<div id="mainpage"><?php include('content/newAbout.php')?></div>
+			<div id="mainpage"><?php include('content/newAbout.php');?></div>
 		</div>
         
 		<div id="footer"><?php include('include/footer.php');?></div>
