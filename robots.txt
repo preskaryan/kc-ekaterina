@@ -1,0 +1,5 @@
+User agent:*
+Disallow: /Connections/
+Disallow: /acsess/
+Disallow: /6776rtye-cfddf&&c-cxxsddfdddfthvvv/
+Disallow: /images/

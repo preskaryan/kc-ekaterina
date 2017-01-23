@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_Recordset1" value="name:text;datatype:date,name:added;datatype:blob,name:avtor;datatype:string,name:kratko;datatype:unknown" />
+</info>

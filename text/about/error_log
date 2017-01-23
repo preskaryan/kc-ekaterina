@@ -1,0 +1,8 @@
+[26-Oct-2006 14:31:43] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /www/kcekater/www/htdocs/text/about/add_text.php on line 83
+[26-Oct-2006 14:31:43] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /www/kcekater/www/htdocs/text/about/add_text.php on line 84
+[26-Oct-2006 14:32:32] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /www/kcekater/www/htdocs/text/about/add_text.php on line 83
+[26-Oct-2006 14:32:32] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /www/kcekater/www/htdocs/text/about/add_text.php on line 84
+[26-Oct-2006 14:32:51] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /www/kcekater/www/htdocs/text/about/add_text.php on line 83
+[26-Oct-2006 14:32:51] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /www/kcekater/www/htdocs/text/about/add_text.php on line 84
+[14-Nov-2006 21:09:27] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /www/kcekater/www/htdocs/text/about/add_text.php on line 83
+[14-Nov-2006 21:09:27] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /www/kcekater/www/htdocs/text/about/add_text.php on line 84
