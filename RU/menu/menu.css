@@ -54,17 +54,21 @@ li {
 	height: 120px;
 	display: flex;
 	justify-content: center;
-	background-color: linear-gradient(to right #98AAC0, #000000, #98AAC0);
+	/*background-color: linear-gradient(to right #98AAC0, #000000, #98AAC0);*/
 	background-repeat: no-repeat;
 	background-blend-mode: overlay;
 	background-color: #BDCDE0;
-	box-shadow: 0px 1px 3px 3px #98AAC0;
+	/*box-shadow: 0px 1px 3px 3px #98AAC0;*/
+			box-shadow: 
+	1px 0px 4px rgba(0, 0, 0, .3),
+   0px -13px 10px -13px rgba(0, 0, 0, .8),
+   0px 13px 10px -13px rgba(0, 0, 0, .8),
+   0 0 20px rgba(0, 0, 0, .1) inset;
 	position: relative;
 	z-index: 10;
 }
 #content{
 	padding-top: 3px;
-	border-left: 1px solid #98AAC0;
 	position: relative;
     z-index: 5;
 }
@@ -75,7 +79,7 @@ li {
 	z-index: 2;
 }
 #mainpage{
-    width: 79%;
+    width: 80%;
     float: left;
 	position: relative;
 	z-index: 2;
@@ -88,6 +92,11 @@ li {
 	background-color: #FFFFFF;
 	width: 75%;
 	float: left;
+		box-shadow: 
+	0 1px 4px rgba(0, 0, 0, .3),
+   -13px 0 5px -13px rgba(0, 0, 0, .8),
+   13px 0 5px -13px rgba(0, 0, 0, .8),
+   0 0 20px rgba(0, 0, 0, .1) inset;
 }
 
 .rightmenu{
@@ -192,7 +201,7 @@ li {
 			text-decoration: none;
 			border-bottom: 1px solid #98AAC0;
 			text-align: left;
-			border-right: 1px solid #98AAC0;
+			/*border-right: 1px solid #98AAC0;*/
 			padding-left: 20px;
 			padding-top: 15px;
 			vertical-align: middle;
@@ -219,7 +228,7 @@ li {
 			text-decoration: none;
 			border-bottom: 1px solid #98AAC0;
 			text-align: left;
-			border-right: 1px solid #98AAC0;
+			/*border-right: 1px solid #98AAC0;*/
 			padding-left: 35px;
 			padding-top: 10px;
 			vertical-align: middle;
@@ -316,7 +325,7 @@ a.phones:active {
 			text-decoration: none;
 			border-bottom: 1px solid #98AAC0;
 			text-align: left;
-			border-left: 1px solid #98AAC0;
+			/*border-left: 1px solid #98AAC0;*/
 			vertical-align: middle;
 			cursor: pointer;
             padding-left: 5px;
