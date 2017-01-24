@@ -9,11 +9,8 @@
 
 <body onload="initPage()">
     <div id="wrapper">
-		<div class="break">&nbsp;</div>
         
         <div id="header"><?php include('include/header.php');?></div>
-
-    	<div class="break">&nbsp;</div>
         
 		<div id="content">
 			<div id="menu"><?php include('menu/menu.php');?></div>

@@ -2,10 +2,10 @@ body {
 	font-family: Georgia, Georgia, Helvetica;
 	font-size: 12px;
     font-weight: 100;
-	background-color: #B7D6F8;
+	background-color: #E2EEFE;
 	line-height:150%;
-	min-width: 1200px;
-	margin:0;
+	align-self: center;
+	margin:auto;
 	padding:0;
 }
 td {
@@ -29,45 +29,76 @@ li {
 }
 #header{
 	width: 100%;
-	margin-left: 0;
-	margin-right: 0;
+	padding: 0;
+	display: initial;
 
 }
 #header_phones_left{
 	background-image:url('../../image/phoneNew2.png'); 
 	background-repeat:no-repeat;
 	background-position:center;
+	background-blend-mode: overlay;
 	width: 15%;
 	float: left;
-	vertical-align: middle;
-	margin: 50;
-	padding: 50;
+	display: flex;
+	vertical-align: bottom;
 	border: 1;
 }
 #header_phones_right{
-	width: 15%;
+	width: 20%;
 	height: 100%;
 	float: right;
 }
 #header_logo{
-	float: left;
-	width: 70%;
+	width: 100%;
+	height: 120px;
+	display: flex;
+	justify-content: center;
+	background-color: linear-gradient(to right #98AAC0, #000000, #98AAC0);
+	background-repeat: no-repeat;
+	background-blend-mode: overlay;
+	background-color: #BDCDE0;
+	box-shadow: 0px 1px 3px 3px #98AAC0;
+	position: relative;
+	z-index: 10;
 }
 #content{
-	margin: 50;
-	padding: 50;
+	padding-top: 3px;
+	border-left: 1px solid #98AAC0;
+	position: relative;
+    z-index: 5;
 }
 #menu{
     width: 20%;
 	float: left;
+	position: relative;
+	z-index: 2;
 }
 #mainpage{
-    width: 80%;
-    float: right;
+    width: 79%;
+    float: left;
+	position: relative;
+	z-index: 2;
 }
 #footer{
 	clear: both;
 }
+
+.information{
+	background-color: #FFFFFF;
+	width: 75%;
+	float: left;
+}
+
+.rightmenu{
+	width: 25%;
+	float:left;
+}
+
+.bgcolor_white{
+	background-color: #FFFFFF;
+}
+
 .break{
 	clear: both;
 	height: 1px;
@@ -159,9 +190,9 @@ li {
 			font-weight: 100;
 			height: 30px;
 			text-decoration: none;
-			border-bottom: 1px dashed #3399FF;
+			border-bottom: 1px solid #98AAC0;
 			text-align: left;
-			border-right: 1px dashed #3399FF;
+			border-right: 1px solid #98AAC0;
 			padding-left: 20px;
 			padding-top: 15px;
 			vertical-align: middle;
@@ -173,7 +204,7 @@ li {
 			background-color: #FF9933;
 			font-size: 18px;
 			font-family: Georgia, serif;
-			border-bottom: 1px dashed #FF9933;
+			border-bottom: 1px solid #98AAC0;
 			text-align: center;
 			padding-left: 10px;
 		}
@@ -186,9 +217,9 @@ li {
 			font-weight: 100;
 			height: 30px;
 			text-decoration: none;
-			border-bottom: 1px dashed #3399FF;
+			border-bottom: 1px solid #98AAC0;
 			text-align: left;
-			border-right: 1px dashed #3399FF;
+			border-right: 1px solid #98AAC0;
 			padding-left: 35px;
 			padding-top: 10px;
 			vertical-align: middle;
@@ -283,9 +314,9 @@ a.phones:active {
 			font-family: Georgia, Helvetica, sans-serif;
 			height: 20px;
 			text-decoration: none;
-			border-bottom: 1px dashed #3399FF;
+			border-bottom: 1px solid #98AAC0;
 			text-align: left;
-			border-right: 1px dashed #3399FF;
+			border-left: 1px solid #98AAC0;
 			vertical-align: middle;
 			cursor: pointer;
             padding-left: 5px;
@@ -304,7 +335,7 @@ a.phones:active {
 			background-color: #FF9933;
 			font-size: 18px;
 			font-family: "Georgia", Georgia;
-			border-bottom: 1px dashed #FF9933;
+			border-bottom: 1px solid #98AAC0;
 			text-align: center;
 			vertical-align: top;
 			padding-left: 10px;

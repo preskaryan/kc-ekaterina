@@ -21,27 +21,14 @@ if (isset($_GET['totalRows_Recordset1'])) {
 }
 $totalPages_Recordset1 = ceil($totalRows_Recordset1/$maxRows_Recordset1)-1;
 ?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<title>Кризисный центр «Екатерина» для женщин и детей, переживших насилие в семье</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
-	<script src="menu/menu.js" language="javascript"></script>
-	<link rel="stylesheet" href="menu/menu.css">
-</head>
 
-
-<table width="100%" height="100%"  border="0" cellpadding="0" cellspacing="0">
-  <tr>
-    <th scope="col">
-      <tr>
-         <td>
+<div class="information">
 
           <p align="center" class="bodyHeader">Кто мы?</p>
           <p align="left" class="text">Свердловская региональная общественная организация «Кризисный центр для женщин и детей, переживших насилие в семье «Екатерина». </p>
               <p align="center" class="bodyHeader">Наши контакты</p>
-          <div align="lefts">
-			<p class="text">Информационная линия для пострадавших от насилия в семье: +7 (952) 146-22-23<br>(время работы - ПН, ЧТ, ПТ с 12.00 до 17.00)</p>
+            <div align="left">
+			        <p class="text">Информационная линия для пострадавших от насилия в семье: +7 (952) 146-22-23<br>(время работы - ПН, ЧТ, ПТ с 12.00 до 17.00)</p>
               <p class="text">Электронный адрес: <a href="mailto:kc-ekaterina@mail.ru">kc-ekaterina@mail.ru</a><br>
             </div>
           <p align="center" class="bodyHeader">Как мы начинали?</p>
@@ -54,15 +41,14 @@ $totalPages_Recordset1 = ceil($totalRows_Recordset1/$maxRows_Recordset1)-1;
           <p align="left" class="text">Специалисты центра проводят индивидуальное консультирование женщин, пострадавших от домашнего насилия или столкнувшихся с проблемой торговли людьми работает телефон доверия, проводится группа поддержки и самопомощи для женщин, при необходимости осуществляется адвокатское сопровождение женщин в суде. Постоянно ведется работа с региональными, областными и городскими средствами массовой информации по теме домашнего насилия и торговли людьми. <br>
     Сотрудники центра организуют и проводят тренинги на эти темы для различных групп населения: сотрудников милиции, педагогов, социальных работников, врачей. <br>
     Сотрудники «Екатерины» оказывают консультативную и методическую помощь женским организациям и социальным службам Свердловской области и Уральского региона по созданию у них кризисных центров для женщин. </p>
-              <p align="center" class="bodyHeader">Наша миссия</p>
+           <p align="center" class="bodyHeader">Наша миссия</p>
           <p align="left" class="text">Миссия организации - выступать в защиту женщин, подвергающихся насилию, и обеспечивать их безопасность путем
 			 предотвращения и профилактики насилия, а также предоставления услуг женщинам, пострадавшим (страдающим) от домашнего насилия,
 			сексуального надругательства и в результате незаконного вывоза людей (торговли женщинами).</p>
 
-        </td>
+</div>
 
-        <td width="20%" valign="top">
-
+<div class="rightmenu">
           <div class="newsHeader">Новости</div>
 
 				<?php do { ?>
@@ -87,15 +73,8 @@ $totalPages_Recordset1 = ceil($totalRows_Recordset1/$maxRows_Recordset1)-1;
 
 	            </table>
 			 <?php } while ($row_Recordset1 = mysql_fetch_assoc($Recordset1)); ?>
+</div>
 
-        </td>
-      </tr>
-
-    </table></th>
-  </tr>
-</table>
-</body>
-</html>
 <?php
 mysql_free_result($Recordset1);
 ?>

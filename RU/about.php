@@ -34,12 +34,12 @@ $totalPages_Recordset1 = ceil($totalRows_Recordset1/$maxRows_Recordset1)-1;
 <table width="100%" height="100%"  border="0" cellpadding="0" cellspacing="0">
   <tr>
     <th scope="col">
-      <tr bgcolor="#B7D6F8"><?php include('include/header.php');?>
+      <tr><?php include('include/header.php');?>
       </tr>
 
-      <tr bgcolor="#FFFFFF">
-        <td width="20%" valign="top" bgcolor="#B7D6F8"><div align="left"><?php include('menu/menu.php');?></div></td>
-         <td width="60%	" bgcolor="#FFFFFF">
+      <tr>
+        <td width="15%" valign="top"><div align="left"><?php include('menu/menu.php');?></div></td>
+         <td width="50%" class="bgcolor_white">
 
           <p align="center" class="bodyHeader">Кто мы?</p>
           <p align="left" class="text">Свердловская региональная общественная организация «Кризисный центр для женщин и детей, переживших насилие в семье «Екатерина». </p>
@@ -65,7 +65,7 @@ $totalPages_Recordset1 = ceil($totalRows_Recordset1/$maxRows_Recordset1)-1;
 
         </td>
 
-        <td width="20%" valign="top" bgcolor="#B7D6F8" height="662">
+        <td width="15%" valign="top" height="662">
 
           <div class="newsHeader">Новости</div>
 
@@ -95,7 +95,7 @@ $totalPages_Recordset1 = ceil($totalRows_Recordset1/$maxRows_Recordset1)-1;
         </td>
       </tr>
 
-      <tr bgcolor="#B7D6F8">
+      <tr>
         <td colspan="3"><?php include('include/footer.php');?><br>
 		</td>
       </tr>

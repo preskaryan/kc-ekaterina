@@ -3,9 +3,9 @@
 				var numDropMenu = 12;
 				var numDropOption = 7;
 
-				var bgLinkColor = '#B7D6F8';
+				var bgLinkColor = '#E2EEFE';
 				var bgLinkHover = '#3399FF';
-				var bgLinkActive = '#B7D6F8';
+				var bgLinkActive = '#E2EEFE';
 
 				var optLinkColor = '#CBE0F7';
 				var optLinkHover = '#3399FF';
