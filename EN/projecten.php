@@ -39,23 +39,6 @@ $totalRows_Recordset2 = mysql_num_rows($Recordset2);
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
 <script language="JavaScript" src="menu\toggle.js"></script>
 <link rel="stylesheet" href="menu\toggle.css">
-<style type="text/css">
-<!--
-.style59 {
-color: #333333
-}
-
-.style39 {
-	color: #000000;
-	font-size: 16px;
-}
-
-.style49 {
-	color: #3399FF;
-	font-size: 18px;
-}
--->
-</style>
 </head>
 
 <body onload="initPage()">
@@ -63,29 +46,7 @@ color: #333333
   <tr>
     <th scope="col"><table width="100%" height="100%" border="0"  cellpadding="0" cellspacing="0">
       <tr bgcolor="#B7D6F8">
-        <th width="15%">
-            <table border='0'>
-                <tr>
-                    <td width="40%">Our assistance is<br>anonymous and free!</td>
-                </tr>
-                <tr>
-                      <td>+7 (952) 146-22-23</td>
-              </tr>
-            </table>
-        </th>
-        <th scope="col">
-              <img src="../image/tablebackground8.jpg" width="100%">
-        </th>
-        <th width="15%">
-            <a href="http://www.112.ru/">
-                <table height="120" border='0'>
-                    <tr>
-                        <td width="40%"><img src="../image/frst_logo.png" border="0" align="right"></td>
-                        <td>Russian Federation Law-enforcement Portal</td>
-                    </tr>
-                </table>
-            </a>
-        </th>
+         <tr><?php include('include/headeren.php');?></tr>
       </tr>
       <tr bgcolor="#FFFFFF">
         <td width="15%" valign="top" bgcolor="#B7D6F8"><div align="left"><?php include('menu/toggle.php');?></div></td>
