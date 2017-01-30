@@ -10,7 +10,7 @@ if (isset($_GET['pageNum_Recordset1'])) {
 $startRow_Recordset1 = $pageNum_Recordset1 * $maxRows_Recordset1;
 
 mysql_select_db($database_Ekaterina, $Ekaterina);
-$query_Recordset1 = "SELECT * FROM coalitionMembers ORDER BY id ASC";
+$query_Recordset1 = "SELECT * FROM partners WHERE lang = '1' ORDER BY adress ASC";
 $query_limit_Recordset1 = sprintf("%s LIMIT %d, %d", $query_Recordset1, $startRow_Recordset1, $maxRows_Recordset1);
 $Recordset1 = mysql_query($query_limit_Recordset1, $Ekaterina) or die(mysql_error());
 $row_Recordset1 = mysql_fetch_assoc($Recordset1);
@@ -49,25 +49,42 @@ $queryString_Recordset1 = sprintf("&totalRows_Recordset1=%d%s", $totalRows_Recor
 </head>
 
 <body onload="initPage()">
-    <div id="wrapper">
-        
-        <div id="header"><?php include('include/header.php');?></div>
-        
-    <div id="content">
-      <div id="menu"><?php include('menu/menu.php');?></div>
-      <div id="mainpage">
-              <div class="information">
-      <p align="center" class="bodyHeader">Список членов коалиции</p>
+<table width="100%" height="100%"  border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <th scope="col">
+      <tr bgcolor="#B7D6F8"><?php include('include/header.php');?>
+      </tr>
+
+      <tr bgcolor="#FFFFFF">
+        <td width="20%" valign="top" bgcolor="#B7D6F8"><div align="center"><?php include('menu/menu.php');?></div></td>
+        <td valign="top" bgcolor="#FFFFFF"><p align="center"> </p>
+
+
+	<div align="center">
+		<img class="photo" src="../image/partners.jpg" width="496" height="319">
+		<p>Кризисное отделение для женщин г. Богдановича. Вручение игрушек, собранных английскими партнерами из центра "Haven"</p>
+
+	</div>
+
+
+
+
+
+
+        <p align="justify" class="text">Наряду с партнерами, кризисный центр «Екатерина» имеет договоры о сотрудничестве с Свердловским областным судом, УВД г.Екатеринбурга, Министерством социальной защиты.</p>
+ 	    <p align="center" class="bodyHeader">Партнеры кризисного центра «Екатерина»</p>
        <ol class="ulPartners">
           <?php do { ?>
                 <li class="text">
-                    <span class="bigItalic anotherColor"><?php echo $row_Recordset1['fullName']; ?></span>
+                    <span class="bigItalic anotherColor"><?php echo $row_Recordset1['orgname']; ?></span>
                     <br>
                     <br>
-                    <span class="text">Город: <?php echo $row_Recordset1['city']; ?><br></span>
-                    <span class="text">Контактное лицо: <?php echo $row_Recordset1['contactPerson']; ?><br></span>
-                    <span class="text">Контактный телефон: <?php echo $row_Recordset1['phone']; ?><br></span>
-                    <span class="text">Электронная почта: <?php echo $row_Recordset1['email']; ?><br></span>
+                    <span class="text">Руководитель: <?php echo $row_Recordset1['dirname']; ?><br></span>
+                    <span class="text">Адрес: <?php echo $row_Recordset1['adress']; ?><br></span>
+                    <span class="text">Контактный телефон: <?php echo $row_Recordset1['telephone']; ?><br></span>
+                    <span class="text">Деятельность: <?php echo $row_Recordset1['text']; ?><br></span>
+    <!--          <span class="big">Совместные проекты: <?php echo $row_Recordset1['text']; ?><br>
+                     добавлено:<?php echo date("d.m.Y", strtotime($row_Recordset1['added'])); ?><br>-->
                     <br>
                 </li>
                              <?php } while ($row_Recordset1 = mysql_fetch_assoc($Recordset1)); ?>
@@ -85,18 +102,27 @@ $queryString_Recordset1 = sprintf("&totalRows_Recordset1=%d%s", $totalRows_Recor
                   <?php } // Show if not last page ?></td>
               </tr>
             </table>
-          </div>
-      </div>
+          </div></td>
 
-     <div class="rightmenu">            
-      <div class="newsHeader">Информация</div>
-     </div> 
+	        <td width="20%" valign="top" bgcolor="#B7D6F8"><div align="left">
 
-      </div>
-    </div>
-        
-    <div id="footer"><?php include('include/footer.php');?></div>
-    </div>
+
+
+
+
+
+
+
+			</div></td>
+        </tr>
+      <tr bgcolor="#B7D6F8">
+        <td colspan="3"><?php include('include/footer.php');?>
+		<br>
+		</td>
+        </tr>
+    </table></th>
+  </tr>
+</table>
 </body>
 </html>
 <?php

@@ -8,66 +8,55 @@
 </head>
 
 <body onload="initPage()">
-<table width="100%" height="100%"  border="0" cellpadding="0" cellspacing="0">
-  <tr>
-    <th scope="col">
-      <tr bgcolor="#B7D6F8"><?php include('include/header.php');?>
-      </tr>
-
-      <tr bgcolor="#FFFFFF">
-	<td width="20%" valign="top" bgcolor="#B7D6F8"><div align="left"><?php include('menu/menu.php');?></div>
-	</td>
-	
-	<td valign="top" bgcolor="#FFFFFF">
-	
-	       <p align="center" class="kontakt">Контактная информация</p>
+    <div id="wrapper">
+        
+        <div id="header"><?php include('include/header.php');?></div>
+        
+    <div id="content">
+      <div id="menu"><?php include('menu/menu.php');?></div>
+      <div id="mainpage">
+          <div class="information">
+           <p align="center" class="kontakt">Контактная информация</p>
            <div class="textInTable">
          <!--<p align="justify" class="text">Телефоны доверия:</p>-->
-           <table border="0" bordercolor="#3399FF" cellspacing="0" cellpadding="5px" cols="2" width="100%">
+           <table border="0" bordercolor="#3399FF" cellspacing="10" cellpadding="5px" cols="2" width="100%">
                 <tr>
                     <td align="justify" width="25%" height="40px" >Информационная линия для пострадавших от насилия в семье</td>
                     <td align="left" class="anotherColor">8 (952) 146-222-3 <br><font size="2">(с 12:00 до 17:00, <br>ПН, ЧТ и ПТ)</font></td>
                 </tr>
-				<tr>
+        <tr>
                     <td align="justify" height="40px" >Адрес электронной почты:</td>
                     <td align="left" class="anotherColor"><a href=mailto:"kc-ekaterina@mail.ru">kc-ekaterina@mail.ru</a></td>
                 </tr>
-				<tr>
+        <tr>
                     <td align="justify" height="40px" ></td>
                     <td align="left" class="anotherColor"></td>
                 </tr>
-				<tr>
+        <tr>
                     <td align="justify" height="40px" colspan="2">Тематические группы кризисного центра в сети Вконтакте:</td>
                 </tr>
-				<tr>
-                    <td align="justify" height="40px" ><a href="https://vk.com/public91333889">Кризисный центр "Екатерина"</td>
+        <tr>
+                    <td align="justify" height="40px" ><a href="https://vk.com/public91333889" target="_blank">Кризисный центр "Екатерина"</td>
                     <td align="left">Новости о деятельности кризисного центра.</td>
                 </tr>
-				<tr>
-                    <td align="justify" height="40px" ><a href="https://vk.com/public89672721">Вместе мы сила!</td>
+        <tr>
+                    <td align="justify" height="40px" ><a href="https://vk.com/public89672721" target="_blank">Вместе мы сила!</td>
                     <td align="left">Новости о деятельности Коалиции кризисных центров Урало-Сибирского региона, контакты государственных и общественных кризисных центров.</td>
                 </tr>
-				<tr>
-                    <td align="justify" height="40px" ><a href="https://vk.com/event68450507">Счастливый ребёнок - забота каждого!</td>
+        <tr>
+                    <td align="justify" height="40px" ><a href="https://vk.com/event68450507" target="_blank">Счастливый ребёнок - забота каждого!</td>
                     <td align="left">Профессиональная литература, методические пособия, содержание тренингов по работе с пострадавшими от насилия. Издания Кризисного центра «Екатерина» и наработки партнёрских организаций, в том числе план и подробное содержание бесед с ребёнком, иллюстрированная брошюра для детей.</td>
                 </tr>
-			</table>
+      </table>
            </div>
 
-	
-	</td>
-    
-	<td width="20%" valign="top" bgcolor="#B7D6F8" height="662">
-	</td>
-	
-	</tr>
+  
+  </div>
 
-    <tr bgcolor="#B7D6F8">
-      <td colspan="3"><?php include('include/footer.php');?>
-	  </td>
-    </tr>
-    </table></th>
-  </tr>
-</table>
+      </div>
+    </div>
+        
+    <div id="footer"><?php include('include/footer.php');?></div>
+    </div>
 </body>
 </html>
