@@ -6,7 +6,6 @@
 				<a href="about.php"><div class="menuOption" id="option1">О нас</div></a>
 				<a href="trening.php"><div class="menuOption" id="option2">Тренинги</div></a>
 				<a href="partners.php"><div class="menuOption" id="option3">Партнеры</div></a>
-				<!--<a href="copyright.php"><div class="menuOption" id="option4">Спонсоры</div></a>-->
 				<a href="kontakt.php"><div class="menuOption" id="option5">Контакты</div></a>
 			</span>
 		<a href="traffiking.php"><div class="menuHead" id="menu2">Торговля людьми</div></a>

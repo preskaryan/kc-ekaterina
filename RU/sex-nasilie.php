@@ -41,14 +41,15 @@ $totalRows_Recordset2 = mysql_num_rows($Recordset2);
 </head>
 
 <body onload="initPage()">
-<table width="100%" height="100%"  border="0" cellpadding="0" cellspacing="0">
-  <tr>
-    <th scope="col">
-      <tr bgcolor="#B7D6F8"><?php include('include/header.php');?>
-      </tr>
-
-      <tr bgcolor="#FFFFFF">
-        <td width="20%" valign="top" align="left" bgcolor="#B7D6F8"><div align="left" ><?php include('menu/menu.php');?></div></td>
+    <div id="wrapper">
+        
+        <div id="header"><?php include('include/header.php');?></div>
+        
+    <div id="content">
+      <div id="menu"><?php include('menu/menu.php');?></div>
+      <div id="mainpage">
+              <div class="information">
+        <div align="left" ><?php include('menu/menu.php');?></div></td>
         <td width="60%" valign="top" bgcolor="#FFFFFF"><p align="left">
           <?php if ($totalRows_Recordset2 == 0) { // Show if recordset empty ?>
           <p align="center" class="bodyHeader">Что такое сексуальное насилие? </p>
@@ -57,43 +58,40 @@ $totalRows_Recordset2 = mysql_num_rows($Recordset2);
           <p align="justify" class="text">В России 30% старшеклассниц ежегодно подвергаются сексуальному насилию. По данным анонимных опросов, проводимых в России 3 человека из 10 когда-либо в своей жизни подвергались сексуальному насилию (30%). </p>
           <p align="justify" class="text">Если кто-то ПРОТИВ ВАШЕЙ ВОЛИ:
           <ul>
-		  <li>демонстрировал вам свои половые органы,</li>
-          <li>подглядывал за вами в интимные моменты,</li>
-          <li>отпускал в ваш адрес пошлые, затрагивающие чувство собственного достоинства замечания, оскорблял  вас,</li>
-          <li>втягивал вас во время личного или телефонного разговора в обсуждение сексуальных тем,</li>
-          <li>прикасался к интимным частям вашего тела или принуждал Вас прикасаться к нему,</li>
-          <li>изнасиловал Вас,</li>
-		  </ul>
+            <li>демонстрировал вам свои половые органы,</li>
+            <li>подглядывал за вами в интимные моменты,</li>
+            <li>отпускал в ваш адрес пошлые, затрагивающие чувство собственного достоинства замечания, оскорблял  вас,</li>
+            <li>втягивал вас во время личного или телефонного разговора в обсуждение сексуальных тем,</li>
+            <li>прикасался к интимным частям вашего тела или принуждал Вас прикасаться к нему,</li>
+            <li>изнасиловал Вас,</li>
+          </ul>
           <span class="text">то можно с полной уверенностью утверждать, что в отношении Вас было совершено <span class="text xBig anotherColor">СЕКСУАЛЬНОЕ НАСИЛИЕ.</span></p>
           <p align="left"><span><MM_HIDDENREGION><MM:DECORATION OUTLINE="Show%20If..." OUTLINEID=2>
             <?php } // Show if recordset empty ?>
           </span></p>
           <p align="center" class="bodyHeader"><?php echo $row_Recordset2['name']; ?></p>
- 	  <p align="justify" class="text"><?php echo $row_Recordset2['text']; ?></p>
- 	  <p align="right"><span class="newsDate"> <?php echo $row_Recordset2['added']; ?>  </span><br>
-   	  <span class="style40"><?php echo $row_Recordset2['author']; ?> </span>
-</p> </td>
+          <p align="justify" class="text"><?php echo $row_Recordset2['text']; ?></p>
+          <p align="right"><span class="newsDate"> <?php echo $row_Recordset2['added']; ?>  </span><br>
+          <span class="style40"><?php echo $row_Recordset2['author']; ?> </span>
+          </p> 
+      </div>
 
-
-	 <td width="20%" height="462" valign="top" bgcolor="#B7D6F8">
+      <div class="rightmenu">
            <div class="newsHeader">Информация</div>
-		<?php do { ?>
-		   <table width="100%" align="left" class="news" >
-		      <tr>
-            		<td><img src="../image/strelka2.jpg" width="7" height="7"></td>
-					<td><a href="sex-nasilie.php?id=<?php echo $row_Recordset1['id']; ?>"><?php echo $row_Recordset1['name']; ?></a></td>
-
-		      </tr>
-		   </table>
-        	<?php } while ($row_Recordset1 = mysql_fetch_assoc($Recordset1)); ?>
-<span>          </span> </p>          </td>
-      </tr>
-      <tr bgcolor="#B7D6F8">
-        <td colspan="3"><?php include('include/footer.php');?></td>
-        </tr>
-    </table></th>
-  </tr>
-</table>
+            <?php do { ?>
+              <table width="100%" align="left" class="news" >
+                <tr>
+                  <td><img src="../image/strelka2.jpg" width="7" height="7"></td>
+                  <td><a href="sex-nasilie.php?id=<?php echo $row_Recordset1['id']; ?>"><?php echo $row_Recordset1['name']; ?></a></td>
+                </tr>
+              </table>
+            <?php } while ($row_Recordset1 = mysql_fetch_assoc($Recordset1)); ?>
+      </div>
+      </div>
+    </div>
+        
+    <div id="footer"><?php include('include/footer.php');?></div>
+    </div>
 </body>
 </html>
 <?php

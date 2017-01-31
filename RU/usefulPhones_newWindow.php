@@ -9,37 +9,23 @@
 </head>
 
 <body onload="initPage()">
-<table width="100%" height="100%"  border="0" cellpadding="0" cellspacing="0">
-  <tr>
-    <th scope="col">
-      <tr>
-        <th width="20%"></th>
-        <th scope="col">
-              <img src="../image/tablebackground8.jpg" width="100%">
-        </th>
-        <th width="20%"></th>
-	  </tr>
-	  
-	  <tr bgcolor="#FFFFFF">
-        <td width="10%" valign="top" bgcolor="#B7D6F8"></td>
-        <td width="70%" valign="top" bgcolor="#FFFFFF">
-			<?php include('include/phones.php')?>
-		</td>
-
-        <td width="10%" valign="top" bgcolor="#B7D6F8" height="662">        </td>
-      </tr>
-
-      <tr bgcolor="#B7D6F8">
-        <td colspan="6"><?php include('include/footer.php');?>
-		</td>
-      </tr>
-    </table></th>
-  </tr>
-</table>
+    <div id="wrapper">
+        
+        <div id="header"><?php include('include/headerlight.php');?></div>
+        
+    <div id="content">
+      <div id="menu">&nbsp</div>
+      <div id="mainpage">
+        <div class="information">
+          <?php include('include/phones.php');?>
+        </div>
+        <div class="rightmenu"></div> 
+      </div>
+    </div>
+        
+    <div id="footer"><?php include('include/footer.php');?></div>
+    </div>
 </body>
 </html>
 
-<?php
-mysql_free_result($Recordset1);
-mysql_free_result($Recordset2);
-?>
+

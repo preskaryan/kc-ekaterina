@@ -7,9 +7,9 @@
 				var bgLinkHover = '#3399FF';
 				var bgLinkActive = '#E2EEFE';
 
-				var optLinkColor = '#CBE0F7';
+				var optLinkColor = '#EFF6FF';
 				var optLinkHover = '#3399FF';
-				var optLinkActive = '#CBE0F7';
+				var optLinkActive = '#EFF6FF';
 
 				var linkActive = '#FFFFFF';
 				var linkHover = '#FFFFFF';

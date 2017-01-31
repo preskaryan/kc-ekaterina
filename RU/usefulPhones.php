@@ -42,50 +42,30 @@ $totalRows_Recordset2 = mysql_num_rows($Recordset2);
 </head>
 
 <body onload="initPage()">
-<table width="100%" height="100%"  border="0" cellpadding="0" cellspacing="0">
-  <tr>
-    <th scope="col">
-      <tr bgcolor="#B7D6F8">
-        <?php include('include/header.php');?>
-      </tr>
-      
-	  <tr bgcolor="#FFFFFF">
-        <td width="20%" valign="top" bgcolor="#B7D6F8"><div align="left"><?php include('menu/menu.php');?></div></td>
-        <td width="60%" valign="top" bgcolor="#FFFFFF">
-          <?php if ($totalRows_Recordset2 == 0) { // Show if recordset empty ?>
-		  <?php include('include/phones.php');?>
-          <?php } // Show if recordset empty ?>
-          <p> <span  class="bodyHeader"><br><?php echo $row_Recordset2['name']; ?></span></p>
-          <p ><span class="style39"> <div align="left"> <?php echo $row_Recordset2['text']; ?></div></span></p>
-			<p align="right">
-			<span class="style35"> <?php echo $row_Recordset2['added']; ?>  </span><br>
-			<span class="style35"><?php echo $row_Recordset2['author']; ?> </span></p>
-		</td>
+    <div id="wrapper">
+        
+        <div id="header"><?php include('include/header.php');?></div>
+        
+    <div id="content">
+      <div id="menu"><?php include('menu/menu.php');?></div>
+      <div id="mainpage">
+          <div class="information">
+            <?php if ($totalRows_Recordset2 == 0) { // Show if recordset empty ?>
+            <?php include('include/phones.php');?>
+            <?php } // Show if recordset empty ?>
+            <p> <span  class="bodyHeader"><br><?php echo $row_Recordset2['name']; ?></span></p>
+            <p ><span class="style39"> <div align="left"> <?php echo $row_Recordset2['text']; ?></div></span></p>
+            <p align="right">
+            <span class="style35"> <?php echo $row_Recordset2['added']; ?>  </span><br>
+            <span class="style35"><?php echo $row_Recordset2['author']; ?> </span></p>
+          </div>
 
-        <td width="20%" valign="top" bgcolor="#B7D6F8" height="662">
-          <div class="newsHeader">Òðåíèíãè</div>
-                <?php do { ?>
-                    <table align="left" class="news">
-                         <tr>
-                                <td rowspan="2"><img src="../image/strelka2.jpg" width="7" height="7"></td>
-                                <td><a href="trening.php?id=<?php echo $row_Recordset1['id']; ?>"><?php echo $row_Recordset1['name']; ?></a></td>
-                         </tr>
-                         <tr>
-                                <td class="newsDate" align="right"><?php echo $row_Recordset1['added']; ?></td>
-                         </tr>
-                    </table>
-                <?php } while ($row_Recordset1 = mysql_fetch_assoc($Recordset1)); ?>
-        </td>
-      </tr>
-      
-	  <tr bgcolor="#B7D6F8">
-        <td colspan="6"><?php include('include/footer.php');?>
-		</td>
-      </tr>
-    </table>
-	</th>
-  </tr>
-</table>
+          <div class="rightmenu"></div>
+      </div>
+    </div>
+        
+    <div id="footer"><?php include('include/footer.php');?></div>
+    </div>
 </body>
 </html>
 

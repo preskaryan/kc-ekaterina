@@ -43,52 +43,48 @@ $totalRows_Recordset2 = mysql_num_rows($Recordset2);
 </head>
 
 <body onload="initPage()">
-<table width="100%" height="100%"  border="0" cellpadding="0" cellspacing="0">
-  <tr>
-    <th scope="col">
-      <tr bgcolor="#B7D6F8"><?php include('include/header.php');?>
-      </tr>
-
-      <tr bgcolor="#FFFFFF">
-        <td width="20%" valign="top" bgcolor="#B7D6F8"><div align="left"><?php include('menu/menu.php');?></div></td>
-        <td valign="top" bgcolor="#FFFFFF"><?php if ($totalRows_Recordset2 == 0) { // Show if recordset empty ?>
-          <p align="justify" class="text">
+    <div id="wrapper">
+        
+        <div id="header"><?php include('include/header.php');?></div>
+        
+    <div id="content">
+      <div id="menu"><?php include('menu/menu.php');?></div>
+      <div id="mainpage">
+                <div class="information">
+          <?php if ($totalRows_Recordset2 == 0) { // Show if recordset empty ?>
+            <p align="justify" class="text">
                             Этот раздел посвящен рассказам тех, кто не может больше молчать и не в силах скрывать правду.
-			Страшную правду о своей семье, о жизни с самыми дорогими и близкими, которая превратилась в
-			кошмар. Или рассказы тех женщин, которые попали в рабство, но смогли убежать и выжить.
-          </p>
-          <p align="justify" class="text">Если Вы хотите поделиться своей историей, Вы можете прислать ее на наш e-mail:
-<a href="mailto:kc-ekaterina@mail.ru">kc-ekaterina@mail.ru</a> с пометкой «Реальные истории» и мы обязательно разместим ее на нашем веб сайте. </p>
-          <?php } // Show if recordset empty ?>          <p align="left"><span class="text"><MM_HIDDENREGION><MM:DECORATION OUTLINE="Show%20If..." OUTLINEID=2></MM:DECORATION></MM_HIDDENREGION>          </span></p>
-          <br><p align="center" class="bodyHeader"><?php echo $row_Recordset2['name']; ?></p>
+                            Страшную правду о своей семье, о жизни с самыми дорогими и близкими, которая превратилась в
+                           кошмар. Или рассказы тех женщин, которые попали в рабство, но смогли убежать и выжить.
+            </p>
+            <p align="justify" class="text">Если Вы хотите поделиться своей историей, Вы можете прислать ее на наш e-mail:
+            <a href="mailto:kc-ekaterina@mail.ru">kc-ekaterina@mail.ru</a> с пометкой «Реальные истории» и мы обязательно разместим ее на нашем веб сайте. </p>
+          <?php } // Show if recordset empty ?>          
+            <p align="center" class="bodyHeader"><?php echo $row_Recordset2['name']; ?></p>
 
- <p><div align="left"><span class="text"><?php echo $row_Recordset2['text']; ?></span></div></p>
- <p align="right"><br>
-   <span class="newsDate"> <?php echo $row_Recordset2['added']; ?>  </span><br>
-     <span class="newsAuthor"><?php echo $row_Recordset2['author']; ?> </span></p>
- </td>
+            <p><div align="left"><span class="text"><?php echo $row_Recordset2['text']; ?></span></div></p>
+            <p align="right"><br>
+            <span class="newsDate"> <?php echo $row_Recordset2['added']; ?>  </span><br>
+            <span class="newsAuthor"><?php echo $row_Recordset2['author']; ?> </span></p>
+        </div>
 
-
-    <td width="20%" height="662" valign="top" bgcolor="#B7D6F8">
+        <div class="rightmenu">
            <div class="newsHeader">Реальные Истории</div>
-		<?php do { ?>
-			<table class="news">
-			   <tr>
-			       <td width='5%'><img src="../image/strelka2.jpg" width="7" height="7"></td>
-				    <td><a href="real.php?id=<?php echo $row_Recordset1['id']; ?>"><?php echo $row_Recordset1['name']; ?></td></a>
-			   </tr>
-			</table>
-		<?php } while ($row_Recordset1 = mysql_fetch_assoc($Recordset1)); ?>
-        </td>
-      </tr>
-      <tr bgcolor="#B7D6F8">
-        <td colspan="3"><?php include('include/footer.php');?>
-		<br>
-		</td>
-        </tr>
-    </table></th>
-  </tr>
-</table>
+            <?php do { ?>
+             <table class="news">
+               <tr>
+                 <td width='5%'><img src="../image/strelka2.jpg" width="7" height="7"></td>
+                 <td><a href="real.php?id=<?php echo $row_Recordset1['id']; ?>"><?php echo $row_Recordset1['name']; ?></a></td>
+               </tr>
+             </table>
+            <?php } while ($row_Recordset1 = mysql_fetch_assoc($Recordset1)); ?>
+        </div>
+
+      </div>
+    </div>
+        
+    <div id="footer"><?php include('include/footer.php');?></div>
+    </div>
 </body>
 </html>
 <?php

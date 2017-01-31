@@ -43,29 +43,22 @@ $totalRows_Recordset2 = mysql_num_rows($Recordset2);
 </head>
 
 <body onload="initPage()">
-<table width="100%" height="100%"  border="0" cellpadding="0" cellspacing="0">
-  <tr>
-    <th scope="col">
-      <tr bgcolor="#B7D6F8"><?php include('include/header.php');?>
-      </tr>
-
-      <tr bgcolor="#FFFFFF">
-        <td width="20%" valign="top" bgcolor="#B7D6F8"><div align="left"><?php include('menu/menu.php');?></div></td>
-        <td width="60%" valign="top" bgcolor="#FFFFFF">
-
-
-
+    <div id="wrapper">
+        
+        <div id="header"><?php include('include/header.php');?></div>
+        
+    <div id="content">
+      <div id="menu"><?php include('menu/menu.php');?></div>
+      <div id="mainpage">
+              <div class="information">
           <?php if ($totalRows_Recordset2 == 0) { // Show if recordset empty ?>
-
-
-        <p align="justify" class="text"><strong><br>
+          <p align="justify" class="text"><strong><br>
              Сотрудники центра организуют и проводят тренинги по проблемам насилия в семье и торговли людьми для различных групп населения: сотрудников милиции, педагогов, социальных работников, врачей.
           </strong></p>
-
           <p align="justify" class="bodyHeader">Тренинг «Насилие в отношении женщин и детей»</p>
-           <div class="textInTable">
-         <p align="justify" class="text">Первый день:</p>
-           <table border="1" bordercolor="#3399FF" cellspacing="0" cellpadding="5px" cols="2" width="100%">
+          <div class="textInTable">
+          <p align="justify" class="text">Первый день:</p>
+          <table border="1" bordercolor="#3399FF" cellspacing="0" cellpadding="5px" cols="2" width="100%">
                 <tr>
                     <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">10.00 - 11.30</td>
                     <td>Определение насилия в семье. Виды насилия и динамика насилия. Виды психологического и структурного насилия. Насилие в семье: преступление или социальная проблема?
@@ -172,16 +165,13 @@ $totalRows_Recordset2 = mysql_num_rows($Recordset2);
           <p> <span  class="bodyHeader"><br><?php echo $row_Recordset2['name']; ?></span></p>
 
           <p ><span class="style39"> <div align="left"> <?php echo $row_Recordset2['text']; ?></div></span></p>
- <p align="right">
-   <span class="style35"> <?php echo $row_Recordset2['added']; ?>  </span><br>
-     <span class="style35"><?php echo $row_Recordset2['author']; ?> </span></p>
- </td>
+          <p align="right">
+          <span> <?php echo $row_Recordset2['added']; ?>  </span><br>
+          <span><?php echo $row_Recordset2['author']; ?> </span></p>
+      </div>
 
-
-        <td width="20%" valign="top" bgcolor="#B7D6F8" height="662">
-
+      <div class="rightmenu">
           <div class="newsHeader">Тренинги</div>
-
                 <?php do { ?>
                     <table align="left" class="news">
                          <tr>
@@ -193,17 +183,12 @@ $totalRows_Recordset2 = mysql_num_rows($Recordset2);
                          </tr>
                     </table>
                 <?php } while ($row_Recordset1 = mysql_fetch_assoc($Recordset1)); ?>
-        </td>
-
-
-      </tr>
-      <tr bgcolor="#B7D6F8">
-        <td colspan="6"><?php include('include/footer.php');?>
-		</td>
-        </tr>
-    </table></th>
-  </tr>
-</table>
+        </div>
+      </div>
+    </div>
+        
+    <div id="footer"><?php include('include/footer.php');?></div>
+    </div>
 </body>
 </html>
 <?php
