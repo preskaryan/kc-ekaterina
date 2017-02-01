@@ -48,8 +48,13 @@
                 </tr>
                 <tr>
                     <td width="25%" align="center" height="40px" class="anotherColor">8 (34397) 5-28-85<br>
-					<a href="mailto:rvd-sd@gov66.ru">rvd-sd@gov66.ru</a></td>
+          <a href="mailto:rvd-sd@gov66.ru">rvd-sd@gov66.ru</a></td>
                     <td>Ревда</td>
+                </tr>
+                <tr>
+                    <td width="25%" align="center" height="40px" class="anotherColor">8 (34360) 2-83-45<br>8-(34360) 2-22-58<br>
+          <a href="mailto:rvd-sd@gov66.ru">zol-sd@gov66.ru</a></td>
+                    <td>Тавда</td>
                 </tr>
            </table>
            </div>

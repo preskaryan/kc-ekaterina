@@ -5,13 +5,13 @@
 			<span id="menu0">
 				<a href="about.php"><div class="menuOption" id="option1">О нас</div></a>
 				<a href="trening.php"><div class="menuOption" id="option2">Тренинги</div></a>
-				<a href="partners.php"><div class="menuOption" id="option3">Партнеры</div></a>
+				<!--<a href="partners.php"><div class="menuOption" id="option3">Партнеры</div></a>-->
 				<a href="kontakt.php"><div class="menuOption" id="option5">Контакты</div></a>
 			</span>
-		<a href="traffiking.php"><div class="menuHead" id="menu2">Торговля людьми</div></a>
 		<a href="domviolence.php"><div class="menuHead" id="menu3">Домашнее насилие</div></a>
 		<a href="sex-nasilie.php"><div class="menuHead" id="menu4">Сексуальное насилие</div></a>
 		<a href="deti.php"><div class="menuHead" id="menu5">Насилие над детьми</div></a>
+		<a href="traffiking.php"><div class="menuHead" id="menu2">Торговля людьми</div></a>
 		<a href="project.php"><div class="menuHead" id="menu6">Проекты</div></a>
 		<!--<a href="koaliciya.php"><div class="menuHead" id="menu7">Коалиция</div></a>-->
 		<a href="javascript:toggleClamShellMenu('menu12')"><div class="menuHead" id="menu7">Коалиция</div></a>

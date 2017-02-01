@@ -51,7 +51,7 @@ $totalRows_Recordset2 = mysql_num_rows($Recordset2);
       <div id="mainpage">
                 <div class="information">
           <?php if ($totalRows_Recordset2 == 0) { // Show if recordset empty ?>
-            <p align="justify" class="bodyHeader">Кризисный центр «Екатерина» начал свою работу в 1998 году. </p>
+            <p align="content" class="bodyHeader">Кризисный центр «Екатерина» начал свою работу в 1998 г.</p>
             <p align="center">
               <a href="http://kc-ekaterina.ru/foto/3.jpg"><img class="photo"
                   src="http://kc-ekaterina.ru/foto/3.jpg"
@@ -70,18 +70,7 @@ $totalRows_Recordset2 = mysql_num_rows($Recordset2);
         </div>
 
         <div class="rightmenu">
-            <div class="newsHeader">Проекты</div>
-              <?php do { ?>
-                <table width="100%" align="left" class="news">
-                 <tr>
-                   <td rowspan="2"><img src="../image/strelka2.jpg" width="7" height="7"></td>
-                   <td><a href="project.php?id=<?php echo $row_Recordset1['id']; ?>"><?php echo $row_Recordset1['name']; ?></a></td>
-                 </tr>
-                 <tr>
-                   <td class="newsDate"><?php echo $row_Recordset1['added']; ?></td>
-                 </tr>
-                </table>
-              <?php } while ($row_Recordset1 = mysql_fetch_assoc($Recordset1)); ?>
+            
         </div>
 
       </div>

@@ -49,8 +49,6 @@ $totalRows_Recordset2 = mysql_num_rows($Recordset2);
       <div id="menu"><?php include('menu/menu.php');?></div>
       <div id="mainpage">
               <div class="information">
-        <div align="left" ><?php include('menu/menu.php');?></div></td>
-        <td width="60%" valign="top" bgcolor="#FFFFFF"><p align="left">
           <?php if ($totalRows_Recordset2 == 0) { // Show if recordset empty ?>
           <p align="center" class="bodyHeader">Что такое сексуальное насилие? </p>
           <p align="justify" class="text">Об этом трудно говорить. Сексуальное насилие над женщиной затрагивает самые глубинные и очень личные чувства. Положение пострадавшей усугубляется предвзятым отношением общества к проблеме насилия и, особенно, к самой женщине. </p>
@@ -65,7 +63,7 @@ $totalRows_Recordset2 = mysql_num_rows($Recordset2);
             <li>прикасался к интимным частям вашего тела или принуждал Вас прикасаться к нему,</li>
             <li>изнасиловал Вас,</li>
           </ul>
-          <span class="text">то можно с полной уверенностью утверждать, что в отношении Вас было совершено <span class="text xBig anotherColor">СЕКСУАЛЬНОЕ НАСИЛИЕ.</span></p>
+          <span class="text">то можно с полной уверенностью утверждать, что в отношении Вас было совершено <span class="text xBig anotherColor">СЕКСУАЛЬНОЕ НАСИЛИЕ.</span></span></p>
           <p align="left"><span><MM_HIDDENREGION><MM:DECORATION OUTLINE="Show%20If..." OUTLINEID=2>
             <?php } // Show if recordset empty ?>
           </span></p>
