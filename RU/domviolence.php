@@ -61,7 +61,12 @@ $totalRows_Recordset2 = mysql_num_rows($Recordset2);
           <p align="center" class="big">Что с Вами происходит?</p>
           <p align="center" class="xbig">Дом для человека – самое безопасное место. Так должно быть. </p>
           <p align="center" class="xbig anotherColor">А как живете Вы? </p>
-          <p align="justify" class="text"><span class="anotherColor">Каждый час</span> (по некоторым данным - каждые 40 минут) в России от рук мужа или сожителя <span class="anotherColor">погибает женщина.</span> </p>
+          <p align="justify" class="text">Более 25% зафиксированных в России убийств происходят в семье (по данным «Новая газета» 15.10.2015).</p>
+          <p align="justify" class="text">Более 50% преступлений в быту совершается в присутствии детей. Они труднее учатся в школе, страдают от депрессий, повышенной возбудимости и других нарушений психики. Более агрессивны, в 3 раза чаще могут затеять драку.</p>
+          <p align="justify" class="text">Ежегодно 50000 детей убегают из дома, а около 2000 детей совершают суицид, спасаясь от жестокого обращения в семье (данные из рекомендаций Совета по правам человека при Президенте РФ, 2015 год).</p>
+          <p align="justify" class="text">2500 детей в год погибают от домашнего насилия в России (данные российского журнала «Социс» Социологические исследования, №1, 2008).</p>
+          <p align="justify" class="text">По мнению экспертов ЮНИСЕФ, среди детей, страдающих от насилия и ставших свидетелями насилия в семье, чаще встречаются случаи алкоголизма и наркомании, беременности в раннем возрасте, подростковой преступности.</p>
+
           <p align="justify" class="text">За один год в России погибает столько женщин, сколько за 10 лет Афганской войны погибло наших солдат. Вдумайтесь, 1 год мирной жизни равняется 10 годам войны! </p>
           <p align="justify" class="text">Ежедневно в России побоям подвергается <span class="anotherColor">36 тысяч</span> женщин. </p>
           <p align="justify">  </p>
@@ -69,8 +74,6 @@ $totalRows_Recordset2 = mysql_num_rows($Recordset2);
           <?php } // Show if recordset empty ?>
           <p align="center"><span class="bodyHeader"><?php echo $row_Recordset2['name']; ?></span></p>
           <div align="justify" class="text"><?php echo $row_Recordset2['text']; ?></div>
-          <p align="right"><span class="newsDate"> <?php echo $row_Recordset2['added']; ?>  </span><br>
-          <span class="newsAuthor"><?php echo $row_Recordset2['author']; ?></span></p>
         </div>
 
 

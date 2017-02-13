@@ -63,8 +63,8 @@ $totalRows_Recordset2 = mysql_num_rows($Recordset2);
                 <?php } // Show if recordset empty ?>
                 </span>
                 </p>
-              <p> 
-                <span class="bodyHeader" align="center"><?php echo $row_Recordset2['name']; ?></span>
+              <p align="center"> 
+                <span class="bodyHeader"><?php echo $row_Recordset2['name']; ?></span>
               </p>
               <p align="left"><?php echo $row_Recordset2['text']; ?></p>
               <p align="right">

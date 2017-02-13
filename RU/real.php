@@ -61,11 +61,7 @@ $totalRows_Recordset2 = mysql_num_rows($Recordset2);
             <a href="mailto:kc-ekaterina@mail.ru">kc-ekaterina@mail.ru</a> с пометкой «Реальные истории» и мы обязательно разместим ее на нашем веб сайте. </p>
           <?php } // Show if recordset empty ?>          
             <p align="center" class="bodyHeader"><?php echo $row_Recordset2['name']; ?></p>
-
-            <p><div align="left"><span class="text"><?php echo $row_Recordset2['text']; ?></span></div></p>
-            <p align="right"><br>
-            <span class="newsDate"> <?php echo $row_Recordset2['added']; ?>  </span><br>
-            <span class="newsAuthor"><?php echo $row_Recordset2['author']; ?> </span></p>
+            <p align="left" class="text"><?php echo $row_Recordset2['text']; ?></p>
         </div>
 
         <div class="rightmenu">

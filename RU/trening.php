@@ -52,113 +52,54 @@ $totalRows_Recordset2 = mysql_num_rows($Recordset2);
       <div id="mainpage">
               <div class="information">
           <?php if ($totalRows_Recordset2 == 0) { // Show if recordset empty ?>
-          <p align="justify" class="text"><strong><br>
-             Сотрудники центра организуют и проводят тренинги по проблемам насилия в семье и торговли людьми для различных групп населения: сотрудников милиции, педагогов, социальных работников, врачей.
-          </strong></p>
-          <p align="justify" class="bodyHeader">Тренинг «Насилие в отношении женщин и детей»</p>
+          <p align="justify" class="text">Сотрудники центра оказывают помощь по развитию профессиональной компетенции сотрудников различных государственных служб и кризисных 	центров, занимающихся проблемой насилия в семье, организуют и проводят тренинги по проблемам насилия в семье, торговли людьми и основам собеседования и консультирования женщин и детей, переживших домашнее насилие. Тренинги разработаны для различных групп специалистов: сотрудников полиции, педагогов, врачей, мировых судей, адвокатов, специалистов по социальной работе.
+         </p>
+          <p align="justify" class="text">
+          	Основная тематика тренингов для членов Коалиции:
+          	<ul>
+          		<li>Оосновы консультирования по телефону доверия пострадавших от домашнего насилия;
+          		<li>профилактика профессионального «сгорания» сотрудников кризисных центров и профессионалов, по долгу службы занимающихся проблемами насильственных преступлений в семье;
+          		<li>основы проектного менеджмента.
+          	</ul>
+          </p>
+          <p align="center" class="text2 anotherColor">Тренинг «Основы собеседования и консультирования женщин и детей, переживших домашнее насилие. Особенности реабилитации детей, пострадавших от сексуального насилия.»</p>
           <div class="textInTable">
-          <p align="justify" class="text">Первый день:</p>
           <table border="1" bordercolor="#3399FF" cellspacing="0" cellpadding="5px" cols="2" width="100%">
                 <tr>
-                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">10.00 - 11.30</td>
-                    <td>Определение насилия в семье. Виды насилия и динамика насилия. Виды психологического и структурного насилия. Насилие в семье: преступление или социальная проблема?
-                          Мифы и факты о насилии в семье.</td>
+                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">10.00 - 10.40</td>
+                    <td>Преступления в семье как специфическая проблема: сущность, масштабы и современное состояние. Российская статистика и данные в УрФО.</td>
                 </tr>
                 <tr>
-                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">11.30 - 11.45</td>
-                    <td>Кофе-брейк.</td>
+                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">10.40 - 11.50</td>
+                    <td>Виды насилия и их характеристика: физическое, сексуальное, эмоционально-психологическое, экономическое. Особенности проявления. Цикл насилия, общая характеристика людей, пострадавших от насилия и склонных к насилию. Как отличить насилие от других форм силового давления. Чем отличается насилие от конфликта.</td>
                 </tr>
                 <tr>
-                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">11.45 - 13.15</td>
-                    <td>Причины возникновения мифов. Стереотипы мужских и женских ролей в семье. Цикл насилия.</td>
+                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">11.50 - 12.40</td>
+                    <td>Специфика домашнего насилия и методы выявления. Особенности проведения собеседования с пострадавшими от домашнего насилия.</td>
                 </tr>
                 <tr>
-                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">13.15 - 14.00</td>
+                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">12.40 - 13.40</td>
                     <td>Обед.</td>
                 </tr>
                 <tr>
-                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">14.00 - 15.00</td>
-                    <td>Определение насилия над детьми. Виды насилия над ребенком.</td>
+                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">13.40 - 14.50</td>
+                    <td>Как выявлять признаки домашнего и сексуального насилия над детьми. Специфика проведения с ними собеседований и реабилитационных мероприятий.</td>
                 </tr>
                 <tr>
-                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">15.00 - 15.15</td>
-                    <td>Кофе-брейк.</td>
+                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">14.50 - 15.50</td>
+                    <td>Основы профилактики синдрома эмоционального выгорания у специалистов.</td>
                 </tr>
                 <tr>
-                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">15.15 - 17.00</td>
-                    <td>Мифы и факты о насилии над ребенком. Последствия насилия над детьми. Возрастные особенности последствий домашнего насилия.</td>
+                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">15.50 - 16.10</td>
+                    <td>Межведомственное взаимодействие в решении проблемы насилия в семье. Презентация информационного пакета для пострадавших женщин и детей: «Как распознать факты жестокого обращения с детьми».</td>
+                </tr>
+                <tr>
+                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">16.10 - 16.30</td>
+                    <td>Подведение итогов семинара.</td>
                 </tr>
            </table>
            </div>
 
-          <div class="textInTable">
-          <p align="justify" class="text">Второй день:</p>
-          <table border="1" bordercolor="#3399FF" cellspacing="0" cellpadding="5px" cols="2" width="100%">
-                <tr>
-                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">10.00 - 11.30</td></td>
-                    <td>Признаки насилия. Стратегии установления власти и контроля.</td>
-                </tr>
-                <tr>
-                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">11.30 - 11.45</td></td>
-                    <td>Кофе-брейк.</td>
-                </tr>
-                <tr>
-                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">11.45 - 13.00</td></td>
-                    <td>Положение женщины, подвергающейся насилию. Почему она не уходит? Модели поведения пострадавшей. Стокгольмский синдром. Последствия насилия.</td>
-                </tr>
-                <tr>
-                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">13.00 - 13.45</td></td>
-                    <td>Обед.</td>
-                </tr>
-                <tr>
-                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">13.45 - 15.15</td></td>
-                    <td>Посттравматический синдром. Собеседование с пострадавшими от насилия. Какие задавать вопросы и как?</td>
-                </tr>
-                <tr>
-                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">15.15 - 15.30</td></td>
-                    <td>Кофе-брейк.</td>
-                </tr>
-                <tr>
-                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">15.30 - 17.00</td></td>
-                    <td>Возможности и ограничения социальных работников и психологов.</td>
-                </tr>
-           </table>
-           </div>
-
-          <div class="textInTable">
-          <p align="justify" class="text">Третий день:</p>
-          <table border="1" bordercolor="#3399FF" cellspacing="0" cellpadding="5px" cols="2" width="100%">
-                <tr>
-                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">10.00 - 11.45</td></td>
-                    <td>Мотивы и стратегии обидчика. Оценка степени опасности ситуации. Структура личности обидчика. Характеристика людей, склонных к насилию.
-                            Рекомендации по работе с обидчиком.</td>
-                </tr>
-                <tr>
-                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">11.45 - 12.00</td></td>
-                    <td>Кофе-брейк.</td>
-                </tr>
-                <tr>
-                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">12.00 - 13.00</td></td>
-                    <td>Причины, которые мешают профессионалам работать по проблеме насилия в семье.</td>
-                </tr>
-                <tr>
-                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">13.00- 13.45</td></td>
-                    <td>Обед.</td>
-                </tr>
-                <tr>
-                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">13.45 - 15.00</td></td>
-                    <td>Составление плана безопасности.</td>
-                </tr>
-                <tr>
-                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">15.00 - 15.15</td></td>
-                    <td>Кофе-брейк.</td>
-                </tr>
-                <tr>
-                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">15.15 - 17.00</td></td>
-                    <td>Стратегии вмешательства и поддержки в ситуациях домашнего насилия. Возможности и ограничения социальных работников и психологов.</td>
-                </tr>
-           </table>
-           </div>
 
 
           <?php } // Show if recordset empty ?>
