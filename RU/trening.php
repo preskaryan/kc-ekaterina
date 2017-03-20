@@ -40,6 +40,7 @@ $totalRows_Recordset2 = mysql_num_rows($Recordset2);
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
 	<script language="JavaScript" src="menu/menu.js"></script>
 	<link rel="stylesheet" href="menu/menu.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
 </head>
 
 <body onload="initPage()">
@@ -55,9 +56,9 @@ $totalRows_Recordset2 = mysql_num_rows($Recordset2);
           <p align="justify" class="text">Сотрудники центра оказывают помощь по развитию профессиональной компетенции сотрудников различных государственных служб и кризисных 	центров, занимающихся проблемой насилия в семье, организуют и проводят тренинги по проблемам насилия в семье, торговли людьми и основам собеседования и консультирования женщин и детей, переживших домашнее насилие. Тренинги разработаны для различных групп специалистов: сотрудников полиции, педагогов, врачей, мировых судей, адвокатов, специалистов по социальной работе.
          </p>
           <p align="justify" class="text">
-          	Основная тематика тренингов для членов Коалиции:
+          	Тематика тренингов для членов Коалиции:
           	<ul>
-          		<li>Оосновы консультирования по телефону доверия пострадавших от домашнего насилия;
+          		<li>Основы консультирования по телефону доверия пострадавших от домашнего насилия;
           		<li>профилактика профессионального «сгорания» сотрудников кризисных центров и профессионалов, по долгу службы занимающихся проблемами насильственных преступлений в семье;
           		<li>основы проектного менеджмента.
           	</ul>
@@ -66,35 +67,35 @@ $totalRows_Recordset2 = mysql_num_rows($Recordset2);
           <div class="textInTable">
           <table border="1" bordercolor="#3399FF" cellspacing="0" cellpadding="5px" cols="2" width="100%">
                 <tr>
-                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">10.00 - 10.40</td>
+                    <td width="15%" align="center" height="40px" bgcolor="#EFF6FF" class="anotherColor">10.00 - 10.40</td>
                     <td>Преступления в семье как специфическая проблема: сущность, масштабы и современное состояние. Российская статистика и данные в УрФО.</td>
                 </tr>
                 <tr>
-                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">10.40 - 11.50</td>
+                    <td width="15%" align="center" height="40px" bgcolor="#EFF6FF" class="anotherColor">10.40 - 11.50</td>
                     <td>Виды насилия и их характеристика: физическое, сексуальное, эмоционально-психологическое, экономическое. Особенности проявления. Цикл насилия, общая характеристика людей, пострадавших от насилия и склонных к насилию. Как отличить насилие от других форм силового давления. Чем отличается насилие от конфликта.</td>
                 </tr>
                 <tr>
-                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">11.50 - 12.40</td>
+                    <td width="15%" align="center" height="40px" bgcolor="#EFF6FF" class="anotherColor">11.50 - 12.40</td>
                     <td>Специфика домашнего насилия и методы выявления. Особенности проведения собеседования с пострадавшими от домашнего насилия.</td>
                 </tr>
                 <tr>
-                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">12.40 - 13.40</td>
+                    <td width="15%" align="center" height="40px" bgcolor="#EFF6FF" class="anotherColor">12.40 - 13.40</td>
                     <td>Обед.</td>
                 </tr>
                 <tr>
-                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">13.40 - 14.50</td>
+                    <td width="15%" align="center" height="40px" bgcolor="#EFF6FF" class="anotherColor">13.40 - 14.50</td>
                     <td>Как выявлять признаки домашнего и сексуального насилия над детьми. Специфика проведения с ними собеседований и реабилитационных мероприятий.</td>
                 </tr>
                 <tr>
-                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">14.50 - 15.50</td>
+                    <td width="15%" align="center" height="40px" bgcolor="#EFF6FF" class="anotherColor">14.50 - 15.50</td>
                     <td>Основы профилактики синдрома эмоционального выгорания у специалистов.</td>
                 </tr>
                 <tr>
-                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">15.50 - 16.10</td>
+                    <td width="15%" align="center" height="40px" bgcolor="#EFF6FF" class="anotherColor">15.50 - 16.10</td>
                     <td>Межведомственное взаимодействие в решении проблемы насилия в семье. Презентация информационного пакета для пострадавших женщин и детей: «Как распознать факты жестокого обращения с детьми».</td>
                 </tr>
                 <tr>
-                    <td width="15%" align="center" height="40px" bgcolor="#B7D6F8" class="anotherColor">16.10 - 16.30</td>
+                    <td width="15%" align="center" height="40px" bgcolor="#EFF6FF" class="anotherColor">16.10 - 16.30</td>
                     <td>Подведение итогов семинара.</td>
                 </tr>
            </table>

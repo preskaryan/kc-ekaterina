@@ -46,6 +46,7 @@ $queryString_Recordset1 = sprintf("&totalRows_Recordset1=%d%s", $totalRows_Recor
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
 	<script language="JavaScript" src="menu/menu.js"></script>
 	<link rel="stylesheet" href="menu/menu.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
 </head>
 
 <body onload="initPage()">

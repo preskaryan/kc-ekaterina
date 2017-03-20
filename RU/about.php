@@ -28,6 +28,7 @@ $totalPages_Recordset1 = ceil($totalRows_Recordset1/$maxRows_Recordset1)-1;
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
 	<script src="menu/menu.js" language="javascript"></script>
 	<link rel="stylesheet" href="menu/menu.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
 </head>
 
 <body onload="initPage()">
