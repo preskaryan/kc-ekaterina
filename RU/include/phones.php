@@ -12,10 +12,6 @@
                     <td>Телефон доверия для детей и подростков</td>
                 </tr>
                 <tr>
-                    <td width="25%" align="center" height="40px" class="anotherColor">8 (800) 300-11-00 </td>
-                    <td>Телефон доверия</td>
-                </tr>
-                <tr>
                     <td width="25%" align="center" height="40px" class="anotherColor">8 (952) 146-222-3 <br>(с 12:00 до 17:00, <br>ПН, ЧТ и ПТ)</td>
                     <td>Кризисный центр "Екатерина"</td>
                 </tr>
