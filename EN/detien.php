@@ -41,104 +41,47 @@ $totalRows_Recordset2 = mysql_num_rows($Recordset2);
 </head>
 
 <body onload="initPage()">
-<table width="100%" height="100%"  border="0" cellpadding="0" cellspacing="0">
-  <tr>
-    <th><table border="0" cellpadding="0" cellspacing="0">
-      <tr bgcolor="#B7D6F8">
-        <th width="15%">
-            <table border='0'>
-                <tr>
-                    <td width="40%">Our assistance is<br>anonymous and free!</td>
-                </tr>
-                <tr>
-                      <td>+7 (952) 146-22-23</td>
-              </tr>
-            </table>
-        </th>
-        <th scope="col">
-              <img src="../image/tablebackground8.jpg" width="100%">
-        </th>
-        <th width="15%">
-            <a href="http://www.112.ru/">
-                <table height="120" border='0'>
-                    <tr>
-                        <td width="40%"><img src="../image/frst_logo.png" border="0" align="right"></td>
-                        <td>Russian Federation Law-enforcement Portal</td>
-                    </tr>
-                </table>
-            </a>
-        </th>
-      </tr>
-      <tr bgcolor="#FFFFFF">
-        <td width="15%" valign="top" bgcolor="#B7D6F8"><div align="left"><?php include('menu/toggle.php');?></div></td>
-        <td width="70%" valign="top" bgcolor="#FFFFFF"><p><br>
-          <span class="text">
-          <?php if ($totalRows_Recordset2 == 0) { // Show if recordset empty ?>
-          </MM:DECORATION></MM_HIDDENREGION></span><MM_HIDDENREGION><MM:DECORATION OUTLINE="Show%20If..." OUTLINEID=2
+    <div id="wrapper">
+        
+        <div id="header"><?php include('include/headeren.php');?></div>
+        
+    <div id="content">
+      <div id="menu"><?php include('menu/toggle.php');?></div>
+      
+      <div id="mainpage">
+        <div class="information">
+            <?php if ($totalRows_Recordset2 == 0) { // Show if recordset empty ?>
+                      <p class="bodyHeader" align="center">Violence against children</p>
+			                   <p align="justify" class="text">According to official statistics about 2 million children are
+							           subjected to cruel and violent treatment every year.  Of these
+							           2 million, every tenth child is killed; two thousand commit suicide,
+							           and more than 50,000 run away from home.</p>
+			                   <p align="justify" class="text">About 60% of children who witness or experience family violence cannot
+							           escape this violence in their adult life.  Sometimes they again become
+							           victims of violence and other times they themselves commit violence
+							           within their family.</p>
+			                   <p align="justify" class="text">Children are defenseless under the tyranny of adults.  They are at
+							           once trusting and vulnerable.  Unfortunately, adults all too often
+							           use their authority and power in order to harass and abuse children.
+							           This is both immoral and illegal.</p>
+                         <p>
+                         <span class="text"><br>
+                          <br>
+                          <?php } // Show if recordset empty ?>
+                          </span></p>
+                          <p align="center"> <span class="bodyHeader"><?php echo $row_Recordset2['name']; ?><br>
+                          </span></p>
+                          <p align="left"><span class="text"><?php echo $row_Recordset2['text']; ?></span></p>
+                          <p align="right"><br>
+                            <span class="newsDate"> <?php echo $row_Recordset2['added']; ?>  </span><br>
+                            <span class="newsDate"><?php echo $row_Recordset2['author']; ?> </span></p>
+        </div>
 
-                        <p><span class="bodyHeader" align="center">Violence against children</span></p>
-			<p align="justify" class="text">According to official statistics about 2 million children are
-							subjected to cruel and violent treatment every year.  Of these
-							2 million, every tenth child is killed; two thousand commit suicide,
-							and more than 50,000 run away from home.</p>
-			<p align="justify" class="text">About 60% of children who witness or experience family violence cannot
-							escape this violence in their adult life.  Sometimes they again become
-							victims of violence and other times they themselves commit violence
-							within their family.</p>
-			<p align="justify" class="text">Children are defenseless under the tyranny of adults.  They are at
-							once trusting and vulnerable.  Unfortunately, adults all too often
-							use their authority and power in order to harass and abuse children.
-							This is both immoral and illegal.</p>
-<span class="text"><br>
-          <br>
-          <?php } // Show if recordset empty ?>
-          </span></p>
-          <p align="center"> <span class="bodyHeader"><?php echo $row_Recordset2['name']; ?><br>
-          </span></p>
- <p align="left"><span class="text"><?php echo $row_Recordset2['text']; ?></span></p>
- <p align="right"><br>
-   <span class="newsDate"> <?php echo $row_Recordset2['added']; ?>  </span><br>
-     <span class="newsDate"><?php echo $row_Recordset2['author']; ?> </span></p>
- </td>
-
-
-	<td width="15%" height="662" valign="top" bgcolor="#B7D6F8">
-	</td>
-      </tr>
-      <tr bgcolor="#B7D6F8">
-        <td colspan="3"><?php include('copyrihten.php');?>
-
-
-
-
-
-
-		<br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		</td>
-        </tr>
-    </table></th>
-  </tr>
-</table>
+        <div class="rightmenu">
+        </div>
+        
+        <div id="footer"><?php include('include/footer.php');?></div>
+        </div>
 </body>
 </html>
 <?php

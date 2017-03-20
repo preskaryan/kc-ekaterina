@@ -2,9 +2,10 @@
 				var objDropMenu = null;
 				var numDropMenu = 10;
 
-				var bgLinkColor = '#B7D6F8';
+				var bgLinkColor = '#E2EEFE';
 				var bgLinkHover = '#3399FF';
-				var bgLinkActive = '#B7D6F8';
+				var bgLinkActive = '#E2EEFE';
+
 				var linkActive = '#FFFFFF';
 				var linkHover = '#FFFFFF';
 				var linkColor = '#3399FF';

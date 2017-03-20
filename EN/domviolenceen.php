@@ -55,37 +55,15 @@ $totalRows_Recordset2 = mysql_num_rows($Recordset2);
 </head>
 
 <body onload="initPage()">
-<table width="100%" height="100%" cellpadding="0" cellspacing="0">
-  <tr>
-    <th><table width="100%" height="100%"  border="0" cellpadding="0" cellspacing="0">
-      <tr bgcolor="#B7D6F8">
-        <th width="15%">
-            <table border='0'>
-                <tr>
-                    <td width="40%">Our assistance is<br>anonymous and free!</td>
-                </tr>
-                <tr>
-                      <td>+7 (952) 146-22-23</td>
-              </tr>
-            </table>
-        </th>
-        <th scope="col">
-              <img src="../image/tablebackground8.jpg" width="100%">
-        </th>
-        <th width="15%">
-            <a href="http://www.112.ru/">
-                <table height="120" border='0'>
-                    <tr>
-                        <td width="40%"><img src="../image/frst_logo.png" border="0" align="right"></td>
-                        <td>Russian Federation Law-enforcement Portal</td>
-                    </tr>
-                </table>
-            </a>
-        </th>
-        </tr>
-      <tr bgcolor="#FFFFFF">
-        <td width="15%" valign="top" bgcolor="#B7D6F8"><div align="left"><?php include('menu/toggle.php');?></div></td>
-        <td width="70%" bgcolor="#FFFFFF"><p align="left"> </p>
+    <div id="wrapper">
+        
+        <div id="header"><?php include('include/headeren.php');?></div>
+        
+    <div id="content">
+      <div id="menu"><?php include('menu/toggle.php');?></div>
+      
+      <div id="mainpage">
+        <div class="information">
           <?php if ($totalRows_Recordset2 == 0) { // Show if recordset empty ?>
           <p align="center" class="centeredText">  </p>
           <p align="center" class="centeredText">You are afraid to go home.</p>
@@ -125,14 +103,13 @@ $totalRows_Recordset2 = mysql_num_rows($Recordset2);
 			to work, and withholding money that the victim has earned.
 
 	</p></li></ul>
-	  </p>
+
           <?php } // Show if recordset empty ?>
           <p align="center" class="bodyHeader"><?php echo $row_Recordset2['name']; ?></p>
           <p align="justify"><?php echo $row_Recordset2['text']; ?></p>
-          <p align="right" class="newsDate"> <?php echo $row_Recordset2['added']; ?><br>
-              <?php echo $row_Recordset2['author']; ?></p></td>
+  </div>
 
-	<td width="15%" valign="top" height="462" bgcolor="#B7D6F8">
+ <div class="rightmenu">
 	    <div class="newsHeader">Helpful Information</div>
 		<?php do { ?>
 		   <table align="left" class="news" width='100%'>
@@ -142,16 +119,11 @@ $totalRows_Recordset2 = mysql_num_rows($Recordset2);
 		     </tr>
 		   </table>
                 <?php } while ($row_Recordset1 = mysql_fetch_assoc($Recordset1)); ?>
-	</td>
-
-        </tr>
-      <tr bgcolor="#B7D6F8">
-        <td colspan="3"><?php include('copyrihten.php');?>
-		</td>
-        </tr>
-    </table></th>
-  </tr>
-</table>
+	</div>
+      </div>
+    
+    <div id="footer"><?php include('include/footer.php');?></div>
+    </div>
 </body>
 </html>
 <?php
