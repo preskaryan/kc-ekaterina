@@ -22,5 +22,6 @@
 		<a href="usefulPhones.php"><div class="menuHead" id="menu8">Полезные телефоны</div></a>
 		<a href="real.php"><div class="menuHead" id="menu9">Реальные истории</div></a>
 		<a href="faq.php"><div class="menuHead" id="menu11">Вопросы и ответы</div></a>
+		<a href="download.php"><div class="menuHead" id="menu13">Полезные материалы</div></a>
 		</div>
 

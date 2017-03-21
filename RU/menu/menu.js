@@ -1,6 +1,6 @@
 				var objNavMenu = null;
 				var objDropMenu = null;
-				var numDropMenu = 12;
+				var numDropMenu = 13;
 				var numDropOption = 7;
 
 				var bgLinkColor = '#E2EEFE';

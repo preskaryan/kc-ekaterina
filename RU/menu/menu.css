@@ -8,6 +8,9 @@ body {
 	margin:auto;
 	padding:0;
 }
+table{
+	padding: 20px;
+}
 td {
 	font-family: 'open sans', Helvetica;
 }
@@ -23,6 +26,10 @@ li {
 	padding-left:0px;
 	line-height:150%;
     text-align: left;
+}
+a>p{
+	margin-top: -1em;
+	margin-bottom: -1em;
 }
 #wrapper{
     width:80%;
@@ -72,6 +79,7 @@ li {
 	padding-top: 3px;
 	position: relative;
     z-index: 5;
+    min-height: 552px;
 }
 #menu{
     width: 20%;
@@ -90,6 +98,7 @@ li {
 }
 
 .information{
+	min-height: 598px;
 	background-color: #FFFFFF;
 	width: 75%;
 	float: left;
@@ -242,6 +251,48 @@ a:hover {
 a:active {
 	text-decoration: underline;
 	color: #3399FF;
+}
+a.downloads:link {
+	font-size: 14px;
+	color: #000000;
+	padding-left:30px;
+	padding-right:25px;
+	padding-top:20px;
+	line-height: 200%;
+	text-align: left;
+	color: #000000;
+}
+a.downloads:visited {
+	font-size: 14px;
+	color: #000000;
+	padding-left:30px;
+	padding-right:25px;
+	padding-top:20px;
+	line-height: 200%;
+	text-align: left;
+	color: #000000;
+}
+a.downloads:hover {
+	font-size: 14px;
+	color: #000000;
+	padding-left:30px;
+	padding-right:25px;
+	padding-top:20px;
+	line-height: 200%;
+	text-decoration: underline;
+	text-align: left;
+	color: #000000;
+}
+a.downloads:active {
+	font-size: 14px;
+	color: #000000;
+	padding-left:30px;
+	padding-right:25px;
+	padding-top:20px;
+	line-height: 200%;
+	text-decoration: underline;
+	text-align: left;
+	color: #000000;
 }
 a.phones:link {
 	font-size: 20px;
