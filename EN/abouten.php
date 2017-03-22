@@ -44,7 +44,7 @@ $totalPages_Recordset1 = ceil($totalRows_Recordset1/$maxRows_Recordset1)-1;
           <p align="center" class="bodyHeader">Who are we?</p>
           <p align="center" class="text">We are "Ekaterina" - the Sverlovsk regional crisis center for women and children
            suffering from violence within their family. </p>
-          <p align="center" class="bodyHeader">How did we get started?</span></p>
+          <p align="center" class="bodyHeader">How did we get started?</p>
           <p align="left" class="text">The women's crisis center "Ekaterina" officially opened in Ekaterinburg on March 6th, 1998, although
           a team of local women began working on the problem of domestic violence in 1996.  The center was founded
           by four women.  Our organization spearheaded the citywide program to fight family violence in Ekaterinburg.

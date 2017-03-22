@@ -8,6 +8,14 @@ body {
 	margin:auto;
 	padding:0;
 }
+p{
+	font-size: 14px;
+	color: #000000;
+	padding-left:30px;
+	padding-right:25px;
+	padding-top:20px;
+	line-height: 200%;
+}
 table{
 	padding: 20px;
 }
@@ -437,6 +445,7 @@ a.phones:active {
 	font-size: 20px;
 	padding-left:20px;
 	padding-top:10px;
+	text-align: center;
 }
 
 .design {

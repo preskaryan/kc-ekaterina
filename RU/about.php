@@ -1,6 +1,6 @@
 <?php require_once('../Connections/Ekaterina.php'); ?>
 <?php
-$maxRows_Recordset1 = 10;
+$maxRows_Recordset1 = 5;
 $pageNum_Recordset1 = 0;
 if (isset($_GET['pageNum_Recordset1'])) {
   $pageNum_Recordset1 = $_GET['pageNum_Recordset1'];

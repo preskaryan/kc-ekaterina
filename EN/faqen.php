@@ -42,59 +42,41 @@ $queryString_Recordset1 = sprintf("&totalRows_Recordset1=%d%s", $totalRows_Recor
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>Crisis Center "Ekaterina"</title>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
-<script language="JavaScript" src="menu\toggle.js"></script>
-<link rel="stylesheet" href="menu\toggle.css">
-<style type="text/css">
-<!--
-
-.style31 {color: #666666}
--->
-</style></head>
+  <title>Crisis Center "Ekaterina"</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+  <script language="JavaScript" src="menu\toggle.js"></script>
+  <link rel="stylesheet" href="menu\toggle.css">
+</style>
+</head>
 
 <body onload="initPage()">
-<table width="100%" height="700"  border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <th scope="col"><table width="100%" height="100%"  border="0" cellpadding="0" cellspacing="0">
-      <tr bgcolor="#B7D6F8">
-        <th width="15%">
-            <table border='0'>
-                <tr>
-                    <td width="40%">Our assistance is<br>anonymous and free!</td>
-                </tr>
-                <tr>
-                      <td>+7 (952) 146-22-23</td>
-              </tr>
-            </table>
-        </th>
-        <th scope="col">
-              <img src="../image/tablebackground8.jpg" width="100%">
-        </th>
-        <th width="15%">
-            <a href="http://www.112.ru/">
-                <table height="120" border='0'>
-                    <tr>
-                        <td width="40%"><img src="../image/frst_logo.png" border="0" align="right"></td>
-                        <td>Russian Federation Law-enforcement Portal</td>
-                    </tr>
-                </table>
-            </a>
-        </th>
-      </tr>
-      <tr bgcolor="#FFFFFF">
-        <td width="15%" valign="top" bgcolor="#B7D6F8"><div align="left"><?php include('menu/toggle.php');?></div></td>
-        <td width="70%" height="253" valign="top" bgcolor="#FFFFFF"><p align="center" class="xbig anotherColor">You can send your questions to <a href="mailto:kc-ekaterina@mail.ru>kc-ekaterina@mail.ru</a> </p>
+
+    <div id="wrapper">
+        
+        <div id="header"><?php include('include/headeren.php');?></div>
+        
+    <div id="content">
+      <div id="menu"><?php include('menu/toggle.php');?></div>
+      
+      <div id="mainpage">
+        <div class="information">
+        
+        <p align="center" class="bodyHeader">You can send your questions to <a href="mailto:"kc-ekaterina@mail.ru">kc-ekaterina@mail.ru</a></p>
           <ol>
              <?php do { ?>
-             <li><div>
-          <p align="left" class="questionTitle">Q:</p>
-          <p align="justify" class="question"><?php echo $row_Recordset1['vopros']; ?></p>
-           <p align="left" class="answerTitle">A:</p>
-         <p align="justify" class="answer"><?php echo $row_Recordset1['otvet']; ?></p>
-               </div></li>
-         <?php } while ($row_Recordset1 = mysql_fetch_assoc($Recordset1)); ?>
+             <li>
+                <div>
+                  <p align="left" class="questionTitle">Q:</p>
+                  <p align="justify" class="question"><?php echo $row_Recordset1['vopros']; ?></p>
+           
+                  <p align="left" class="answerTitle">A:</p>
+                  <p align="justify" class="answer"><?php echo $row_Recordset1['otvet']; ?></p>
+               
+                </div>
+             </li>
+             <?php } while ($row_Recordset1 = mysql_fetch_assoc($Recordset1)); ?>
           </ol>
+          
           <div align="left">
             <table width="100%" height="21"  border="0" align="center" cellpadding="0" cellspacing="0">
               <tr bgcolor="#0076AE">
@@ -108,16 +90,16 @@ $queryString_Recordset1 = sprintf("&totalRows_Recordset1=%d%s", $totalRows_Recor
                   <?php } // Show if not last page ?></td>
               </tr>
             </table>
-          </div></td>
-        <td width="15%" valign="top" bgcolor="#B7D6F8"><div> </div></td>
-        </tr>
-      <tr bgcolor="#B7D6F8">
-        <td colspan="3"><?php include('copyrihten.php');?>
-		</td>
-        </tr>
-    </table></th>
-  </tr>
-</table>
+          </div>
+
+        </div>
+
+        <div class="rightmenu">
+         </div>  
+      </div>
+    </div>
+    <div id="footer"><?php include('include/footer.php');?></div>
+    </div>
 </body>
 </html>
 <?php mysql_free_result($Recordset1);?>
